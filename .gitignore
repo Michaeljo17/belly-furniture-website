@@ -3,3 +3,4 @@
 *.log
 .DS_Store
 /app/config/database.php
+public/uploads/
