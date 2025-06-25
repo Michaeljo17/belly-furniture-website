@@ -1,0 +1,168 @@
+/* File: public/admin_assets/css/admin_style.css */
+
+:root {
+    --color-primary: #f7a000;
+    --color-primary-light: #ffc107;
+    --color-background: #F8F9FA;
+    --color-surface: #FFFFFF;
+    --color-header-bg: #181818;
+    --color-header-text: #E9ECEF;
+    --color-text-primary: #212529;
+    --color-text-secondary: #6C757D;
+    --color-border: #E9ECEF;
+    --font-heading: 'Poppins', sans-serif;
+    --font-body: 'Lora', serif;
+}
+
+body.admin-body {
+    background-color: var(--color-background);
+    padding-top: 80px;
+    font-family: var(--font-heading);
+    margin: 0;
+}
+
+.admin-header-main {
+    background-color: var(--color-header-bg);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.header-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.admin-header-main .logo img {
+    height: 40px;
+    display: block;
+    filter: brightness(0) invert(1);
+}
+
+.admin-welcome-text {
+    color: var(--color-header-text);
+    font-size: 1.1em;
+}
+
+.admin-actions-bar {
+    background-color: var(--color-surface);
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--color-border);
+    box-shadow: 0 4px 10px -5px rgba(0,0,0,0.1);
+}
+
+.admin-actions-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.button {
+    display: inline-block;
+    background-color: var(--color-primary);
+    color: var(--color-text-primary);
+    font-family: var(--font-heading);
+    padding: 0.7rem 1.4rem;
+    border: 1px solid var(--color-primary);
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 0;
+}
+.button:hover {
+    background-color: var(--color-primary-light);
+    border-color: var(--color-primary-light);
+}
+
+.button.button-secondary {
+    background-color: var(--color-surface);
+    color: var(--color-text-primary);
+    border: 1px solid var(--color-border);
+}
+.button.button-secondary:hover {
+    background-color: var(--color-background);
+    border-color: var(--color-text-primary);
+}
+
+.admin-main-content {
+    padding: 2rem 0;
+}
+
+.admin-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+h2 {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 2.2rem;
+    color: var(--color-text-primary);
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+.add-item-btn {
+    display: inline-block;
+    background-color: var(--color-primary);
+    color: var(--color-text-primary);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+.add-item-btn:hover {
+    background-color: #e09000;
+}
+
+.form-group { margin-bottom: 15px; }
+.form-group label { display: block; margin-bottom: 5px; font-weight: bold; }
+.form-group input[type="text"],
+.form-group input[type="password"],
+.form-group input[type="date"],
+.form-group input[type="file"],
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.form-actions { margin-top: 20px; text-align: right; }
+.form-actions .btn.back-btn { background-color: #6c757d; color: #fff; }
+.form-actions .btn.back-btn:hover { background-color: #5a6268; }
+
+
+.admin-table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+.admin-table th, .admin-table td { border: 1px solid #ddd; padding: 12px 15px; text-align: left; vertical-align: middle; }
+.admin-table th { background-color: #f2f2f2; font-weight: 600; }
+.admin-table img { width: 80px; height: auto; border-radius: 4px; }
+.admin-table .actions a { margin: 0 5px; color: var(--color-primary); text-decoration: none; font-weight: 600; }
+.admin-table .actions a.delete { color: #dc3545; }
+
+.message { padding: 10px 15px; margin-bottom: 15px; border-radius: 4px; border: 1px solid transparent; }
+.message.success { color: #155724; background-color: #d4edda; border-color: #c3e6cb; }
+.message.error { color: #721c24; background-color: #f8d7da; border-color: #f5c6cb; }
+
+.current-image { margin-top: 10px; }
+.current-image img { max-width: 200px; border: 1px solid #ddd; border-radius: 4px; }
